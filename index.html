@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navbar test1</title>
-    <link rel="stylesheet" href="./style/styles.css" href="./style/search.css">
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap"
-      rel="stylesheet">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="./style/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,13 +15,13 @@
         <div>
             <a class="logo"href="#">Library</a>
         </div>
-        <form>
-            <a class="search"href="#"></a>
-            <label for="search">Search</label>
-            <input id="search" type="search" pattern="./search.css">
-            <span class="caret"></span>
-        </form>
-
+        <div class="search-bar">
+            <form>
+                <label for="search">Search</label>
+                <input id="search" type="search" pattern=".*\S.*" required>
+                <span class="caret"></span>
+            </form>
+        </div>
         <div class="nav">
             <nav>
             <ul class="nav_links">
@@ -53,12 +51,19 @@
                 <img class="img" src="./images/3.jpeg"/>
                 <a class="read_now" href="">Read Now</a>
             </div>
+            <div class="fotos">
+                <img class="img" src="./images/4.jpeg"/>
+                <a class="read_now" href="">Read Now</a>
+             </div>
         </div>
        </section>
+          
+       
        <div>
-        <div class="imagess">
-            <div class="fotoss">
-                <img class="imgg" src="./images/4.jpeg"/>
+        <div class="library" src="">
+
+        </div>
+
        </div>
    
 </body>
