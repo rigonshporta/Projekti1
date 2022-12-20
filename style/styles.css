@@ -23,6 +23,7 @@ li, a, button {
 .nav_links li {
   display: inline-block;
   padding: 0px 20px;
+  justify-content: space-around;
 }
 
 .nav_links li a {
@@ -43,7 +44,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: blueviolet;
 }
 .nav{
     display: flex;
@@ -58,6 +59,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
 	background-color: #21201f;
+	height: 30%;
 
 }
 
@@ -83,6 +85,19 @@ button:hover {
   font-size: 25px;
   color: #fff;
   text-align: center;
+  margin: 40px;
+  margin-top: 40px;
+}
+.tops::before{
+	content: '';
+	position: absolute;
+	left: 465px;
+	bottom: -30px;
+	background-color: blueviolet;
+	height: 2px;
+	box-sizing: border-box;
+	width: 120px;
+
 }
 .images{
   display: flex;
@@ -93,11 +108,11 @@ button:hover {
   height: 300px;
 }
 .read_now{
+  font-style: italic;
   background-color: rgba(0, 136, 169, 0.8);
   padding: 9px 25px;
   border: none;
   border-radius: 50px;
-  font-family: "Chivo Mono", sans-regular;
   color: white;
   margin: auto;
   margin-top: 25px;
@@ -253,24 +268,12 @@ label {
 
 
 .page-content {
+	display: flex;
+	flex-direction: row;
 	justify-content: space-evenly;
-	display: grid;
-	grid-gap: 1rem;
-	padding: 1rem;
-	max-width: 1024px;
-	margin: 0 auto;
-	font-family:"Chivo Mono", sans-regular;
-  }
-  @media (min-width: 600px) {
-	.page-content {
-	  grid-template-columns: repeat(2, 1fr);
-	}
-  }
-  @media (min-width: 800px) {
-	.page-content {
-	  grid-template-columns: repeat(4, 1fr);
-	}
-  }
+	padding: 10px;
+	padding-top: 40px;
+}
   
   .card {
 	place-items: center;
@@ -279,7 +282,9 @@ label {
 	align-items: flex-end;
 	overflow: hidden;
 	padding: 1rem;
-	width: 100%;
+	margin: 0 26px;
+	width: 110%;
+	height: 0%;
 	text-align: center;
 	color: whitesmoke;
 	background-color: whitesmoke;
@@ -316,16 +321,17 @@ label {
 	transition: transform calc(var(--d) * 2) var(--e);
   }
   .card:nth-child(1):before {
-	background-image: url("/images/imgrow/1.jpg")
+	background-image: url("../images/imgrow/1.jpg");
+	position: absolute
   }
   .card:nth-child(2):before {
-	background-image: url("/images/imgrow/2.jpg");
+	background-image: url("../images/imgrow/2.jpg");
   }
   .card:nth-child(3):before {
-	background-image: url("/images/imgrow/3.jpg");
+	background-image: url("../images/imgrow/3.jpg");
   }
   .card:nth-child(4):before {
-	background-image: url("/images/imgrow/4.jpg");
+	background-image: url("../images/imgrow/4.jpg");
 	
   }
   
@@ -347,7 +353,7 @@ label {
 	font-size: 1.3rem;
 	font-weight: bold;
 	line-height: 1.2;
-	background-color: #255ff4;
+	background-color: transparent;
   }
   
   .copy {
@@ -364,9 +370,9 @@ label {
 	font-size: 0.65rem;
 	font-weight: bold;
 	letter-spacing: 0.025rem;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	color: white;
-	background-color: blueviolet;
+	background-color: rgba(0, 136, 169, 1);
 	border: none;
   }
   .btn:hover {
@@ -374,7 +380,7 @@ label {
   }
   .btn:focus {
 	outline: 1px dashed yellow;
-	outline-offset: 3px;
+	outline-offset: 7px;
   }
   
   @media (hover: hover) and (min-width: 600px) {
@@ -420,3 +426,81 @@ label {
 	  transition-duration: 0s;
 	}
   }
+
+  .footer{
+	padding-top: 70px;
+	list-style: none;
+	padding: 70px, 0;
+  }
+
+  .row{
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .footer-col{
+	width: 25%;
+	padding: 0, 15%;
+  }
+  .container{
+	max-width: 1170px;
+	margin: auto;
+  }
+  .footer-col h4{
+	font-size: 18px;
+	color: white;
+	text-transform: capitalize;
+	margin-bottom: 18px;
+	position: relative;
+ }
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: blueviolet;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul{
+	padding-left: 2%;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: white;
+	text-decoration: none;
+	font-weight: 300;
+	color: white;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: blueviolet;
+	padding-left: 7%;
+}
+li{
+	list-style: none;
+	
+}
+
+@media (max-width: 767px){
+	.footer-col{
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	
+}
+@media (max-width: 767px){
+	.footer-col{
+		width: 100%;
+	}
+	
+}
+
