@@ -23,7 +23,6 @@ li, a, button {
 .nav_links li {
   display: inline-block;
   padding: 0px 20px;
-  justify-content: space-around;
 }
 
 .nav_links li a {
@@ -88,17 +87,7 @@ button:hover {
   margin: 40px;
   margin-top: 40px;
 }
-.tops::before{
-	content: '';
-	position: absolute;
-	left: 465px;
-	bottom: -30px;
-	background-color: blueviolet;
-	height: 2px;
-	box-sizing: border-box;
-	width: 120px;
 
-}
 .images{
   display: flex;
   justify-content: space-evenly;
@@ -273,6 +262,7 @@ label {
 	justify-content: space-evenly;
 	padding: 10px;
 	padding-top: 40px;
+	width: 98%;
 }
   
   .card {
@@ -472,7 +462,7 @@ label {
 }
 
 .footer-col ul li a{
-	font-size: 16px;
+	font-size: 15px;
 	text-transform: capitalize;
 	color: white;
 	text-decoration: none;
@@ -503,4 +493,3 @@ li{
 	}
 	
 }
-
