@@ -151,6 +151,7 @@ input {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	margin: 20px;
 }
 input:focus, input:valid {
 	background: var(--input);
@@ -344,6 +345,8 @@ label {
 	font-weight: bold;
 	line-height: 1.2;
 	background-color: transparent;
+	color: white;
+	margin-right: 0;
   }
   
   .copy {
@@ -434,7 +437,8 @@ label {
   }
   .container{
 	max-width: 1170px;
-	margin: auto;
+	margin: 0;
+	width: 100;
   }
   .footer-col h4{
 	font-size: 18px;
@@ -492,4 +496,125 @@ li{
 		width: 100%;
 	}
 	
+}
+
+
+* {
+    margin-left: 0;
+    padding: 0;
+  }
+  body {
+    font-family:"Chivo Mono", sans-regular;
+  }
+  .formbold-mb-5 {
+    margin-bottom: 10px;
+  }
+  
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: black;
+  }
+  .formbold-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    margin-bottom: 12px;
+  }
+  .formbold-form-label-2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px black;
+    background: black;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6b7280;
+    outline: none;
+    resize: none;
+	font-family: "Chivo Mono", sans-regular;
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold-btn {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 14px 32px;
+    border: none;
+    font-weight: 600;
+    background-color: #6a64f1;
+    color: white;
+    cursor: pointer;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .formbold--mx-3 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .formbold-px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .flex {
+    display: flex;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .w-full {
+    width: 100%;
+  }
+  @media (min-width: 540px) {
+    .sm\:w-half {
+      width: 50%;
+    }
+  }
+
+.contactus li h1:hover{
+	color: blueviolet;
+}
+.contactus{
+	text-align: center;
+
+}
+
+.button1{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.container_a{
+	margin-right: 0;
+	height: 50px;
+    width: 315px;
+}
+.form_a{
+	margin-left: 25px;
+	margin-right: 0;
+}
+.form_b{
+	margin-left: 500px;
+	margin-top: 0;
 }
