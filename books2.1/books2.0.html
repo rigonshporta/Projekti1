@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<head>
+  <title>Books v2</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap'><link rel="stylesheet" href="/books2.1/books2.0.css">
+
+</head>
+<body>
+	<!-- <header>
+		<div class="main_header">
+			<div>
+				<a  class="logo" href="/index.html">Library</a>
+			</div>
+			<div class="search-bar">
+				<form>
+					<label for="search">Search</label>
+					<input id="search" type="search" pattern=".*\S.*" required>
+					<span class="caret"></span>
+				</form>
+			</div>
+			<div class="nav">
+				<nav>
+				<ul class="nav_links">
+					<li><a href="news.html">News</a></li>
+					<li><a href="./books2.1/books2.0.html">Books</a></li>
+					<li><a href="./contactus.html">Contact us</a></li>
+				</ul>
+				</nav>
+				<a class="cta" href="/login2.0.html"><button>Login</button></a>
+			</div>        
+		</div>
+		</header> -->
+
+
+	<div class="app">
+
+	<div class="cardList">
+		<button class="cardList__btn btn btn--left">
+			<div class="icon">
+				<svg>
+					<use xlink:href="#arrow-left"></use>
+				</svg>
+			</div>
+		</button>
+
+		<div class="cards__wrapper">
+			<div class="card current--card">
+				<div class="card__image">
+					<img src="/images/imgrow/41xShlnTZTL._AC_SY780_.jpg" alt="" />
+				</div>
+			</div>
+
+			<div class="card next--card">
+				<div class="card__image">
+					<img src="/images/imgrow/513P8XoCAEL._AC_SY780_.jpg" alt="" />
+				</div>
+			</div>
+
+			<div class="card previous--card">
+				<div class="card__image">
+					<img src="/images/imgrow/51J1nb00FLL._AC_SY780_.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+
+		<button class="cardList__btn btn btn--right">
+			<div class="icon">
+				<svg>
+					<use xlink:href="#arrow-right"></use>
+				</svg>
+			</div>
+		</button>
+	</div>
+
+	<div class="infoList">
+		<div class="info__wrapper">
+			<div class="info current--info">
+				<h1 class="text name">Clean Code</h1>
+				<h4 class="text location"></h4>
+				<p class="text description">Even bad code can function.</p>
+			</div>
+
+			<div class="info next--info">
+				<h1 class="text name">Introduction to</h1>
+				<h4 class="text location">Algorithms</h4>
+				<p class="text description">This internationally acclaimed textbook.</p>
+			</div>
+
+			<div class="info previous--info">
+				<h1 class="text name">War and Peace</h1>
+				<h4 class="text location">War and Peace</h4>
+				<p class="text description">is considered one of the world’s greatest works of fiction. </p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="app__bg">
+		<div class="app__bg__image current--image">
+			<img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
+		</div>
+		<div class="app__bg__image next--image">
+			<img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
+		</div>
+		<div class="app__bg__image previous--image">
+			<img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
+		</div>
+	</div>
+</div>
+
+<div class="loading__wrapper">
+	<div class="loader--text">Loading...</div>
+	<div class="loader">
+		<span></span>
+	</div>
+</div>
+
+
+<svg class="icons" style="display: none;">
+	<symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+		<polyline points='328 112 184 256 328 400'
+					 style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+	</symbol>
+	<symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+		<polyline points='184 112 328 256 184 400'
+					 style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+	</symbol>
+</svg>
+
+  <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script><script  src="./books2.0.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <footer class="footer">
+	<div class="container">
+	  <div class="row">
+		<div class="footer-col">
+		  <h4>Discover</h4>
+		  <ul>
+			 <li><a href="#">Home</a></li>
+			 <li><a href="#">Books</a></li>
+			 <li><a href="#">Authors</a></li>
+			 <li><a href="#">Return to top</a></li>
+		  </ul>
+		</div>
+		<div class="footer-col">
+		  <h4>Help</h4>
+		  <ul>
+			<li><a href="#">192</a></li>
+			<li><a href="#">Sussgested edits</a></li>
+			<li><a href="#">Report a problem</a></li>
+			<li><a href="#">Documentation</a></li>
+		  </ul>
+		</div>
+		<div class="footer-col">
+		  <h4>Social</h4>
+		  <ul>
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Instagram</a></li>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Linkedin</a></li>
+		  </ul>
+		</div>
+		<div class="footer-col">
+		  <h4>About us</h4>
+		  <ul>
+			<li><a href="#">email@email.com</a></li>
+			<li><a href="#">tel : +38393333333</a></li>
+			<li><a href="#">Adress: wongo street 420</a></li>
+			<li><a href="#">Zip : 101011</a></li>
+		  </ul>
+		</div>
+	  </div>
+
+	</div>
+  </footer> -->
+
+
+
+
+</body>
+</html>

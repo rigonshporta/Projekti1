@@ -5,9 +5,34 @@
     <title>Log In</title>
 </head>
   <body>
+    <header>
+      <div class="main_header">
+          <div>
+              <a  class="logo" href="/index.html">Library</a>
+          </div>
+          <div class="search-bar">
+              <form>
+                  <label for="search">Search</label>
+                  <input id="search" type="search" pattern=".*\S.*" required>
+                  <span class="caret"></span>
+              </form>
+          </div>
+          <div class="nav">
+              <nav>
+              <ul class="nav_links">
+                  <li><a href="/news.html">News</a></li>
+                  <li><a href="/books.html">Books</a></li>
+                  <li><a href="./contactus.html">Contact us</a></li>
+              </ul>
+              </nav>
+              <a class="cta" href="login.html"><button>Login</button></a>
+          </div>        
+      </div>
+      </header>
+
     <div class="main_login">
       <div class="container_a" id="a-container">
-        <form class="form_a" id="a-form" method="GET" action="">
+        <form class="form_a" id="a-form" method="POST" action="https://formsubmit.co/rs58416@ubt-uni.net">
           <h2 class="form_title title">Krijo Account:</h2>
           <input class="form__input" type="text" placeholder="Emri">
           <input class="form__input" type="text" placeholder="Email">
@@ -16,14 +41,13 @@
         </form>
       </div>
       <div class="container_b" id="b-container">
-        <form class="form_b" id="b-form" method="" action="">
+        <form class="form_b" id="b-form" method="POST" action="https://formsubmit.co/rs58416@ubt-uni.net">
           <h2 class="form_title title">Kyqu:</h2>
           <input class="form__input" type="text" placeholder="Email">
           <input class="form__input" type="password" placeholder="Password"><a class="form__link">  </a>
           <button class="form__button1 button1">Kyqu</button>
         </form>
       </div>
-      
       </div>
     </div>
   </body>

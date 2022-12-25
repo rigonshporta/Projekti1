@@ -325,6 +325,20 @@ label {
 	background-image: url("../images/imgrow/4.jpg");
 	
   }
+  /* .card:nth-child(1):before {
+	background-image: url("/images/imgrow/51J1nb00FLL._AC_SY780_.jpg");
+	position: absolute
+  }
+  .card:nth-child(2):before {
+	background-image: url("../images/imgrow/2.jpg");
+  }
+  .card:nth-child(3):before {
+	background-image: url("../images/imgrow/3.jpg");
+  }
+  .card:nth-child(4):before {
+	background-image: url("../images/imgrow/4.jpg");
+	
+  } */
   
   .content {
 	position: relative;
@@ -618,3 +632,8 @@ li{
 	margin-left: 500px;
 	margin-top: 0;
 }
+
+
+
+
+

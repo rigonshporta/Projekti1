@@ -21,7 +21,7 @@ form.addEventListener("regjistrohu", (e) => {
     e.preventDefault();
     errorElement.innerText = messages.join(", ");
   }
-  if (password.value === "greta") {
-    messages.push("Passwordi smund te jet greta");
+  if (password.value === "111") {
+    messages.push("Passwordi smund te jet 111");
   }
 });
